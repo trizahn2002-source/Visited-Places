@@ -1,4 +1,4 @@
-/* Root Variables - Vintage Travel Palette */
+
 :root {
     --color-parchment: #f4ebe1;
     --color-aged-paper: #e8dcc8;
@@ -101,7 +101,6 @@ body::before {
     letter-spacing: 3px;
 }
 
-/* Add Place Section */
 .add-place-section {
     background: var(--color-cream);
     padding: 30px;
@@ -208,7 +207,7 @@ body::before {
     min-height: 100px;
 }
 
-/* Star Rating */
+
 .star-rating {
     display: flex;
     gap: 8px;
@@ -249,7 +248,7 @@ body::before {
     box-shadow: var(--shadow-medium);
 }
 
-/* Filter Section */
+
 .filter-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -271,7 +270,7 @@ body::before {
     font-size: 1.05rem;
 }
 
-/* Statistics */
+
 .stats-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -311,7 +310,7 @@ body::before {
     font-weight: 600;
 }
 
-/* Places Section */
+
 .places-section {
     animation: fadeIn 0.8s ease-out 0.8s both;
 }
@@ -407,7 +406,6 @@ body::before {
     margin-top: 12px;
     line-height: 1.6;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -423,7 +421,7 @@ body::before {
     font-weight: 600;
 }
 
-/* Empty State */
+
 .empty-state {
     text-align: center;
     padding: 80px 20px;
@@ -447,7 +445,7 @@ body::before {
     opacity: 0.7;
 }
 
-/* Modal */
+
 .modal {
     display: none;
     position: fixed;
@@ -593,7 +591,7 @@ body::before {
     box-shadow: var(--shadow-medium);
 }
 
-/* Animations */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -625,7 +623,7 @@ body::before {
     }
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
     .form-row {
         grid-template-columns: 1fr;
@@ -649,7 +647,6 @@ body::before {
     }
 }
 
-/* Stagger animation for place cards */
 .place-card:nth-child(1) { animation-delay: 0.1s; }
 .place-card:nth-child(2) { animation-delay: 0.2s; }
 .place-card:nth-child(3) { animation-delay: 0.3s; }
