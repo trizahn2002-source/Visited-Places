@@ -1,2 +1,225 @@
 # Visited-Places
 A beautiful and simple travel journal web application.
+# Wanderlust Journal - Travel Tracker 🌍
+
+A beautiful vintage-styled web application to track and document your travel adventures. Built with Test-Driven Development (TDD) principles.
+
+## Features
+
+- **Add Destinations**: Record detailed information about places you've visited
+- **Rich Details**: Track location, country, landmarks, season, dates, ratings, and personal notes
+- **Interactive UI**: Click on any destination to view full details in an elegant modal
+- **Smart Filtering**: Filter by country or season, sort by date, rating, or alphabetically
+- **Statistics Dashboard**: View total destinations, countries visited, and average ratings
+- **Local Storage**: All data persists in your browser
+- **Responsive Design**: Works beautifully on desktop and mobile devices
+
+## Technology Stack
+
+- **HTML5**: Semantic markup
+- **CSS3**: Custom vintage travel aesthetic with animations
+- **Vanilla JavaScript**: No frameworks 
+
+## Installation & Usage
+
+1. Clone or download this repository
+2. Open `index.html` in a modern web browser
+3. Start adding your travel destinations!
+
+No build process or dependencies required - just open and use!
+
+## Business Logic - Place Object
+
+### Place Class
+
+The `Place` class represents a single travel destination with the following properties:
+
+```javascript
+{
+  id: string,           // Auto-generated unique identifier
+  location: string,     // City/destination name
+  country: string,      // Country name
+  landmarks: array,     // List of landmarks visited
+  timeOfYear: string,   // Season or period (e.g., "Summer 2024")
+  dateVisited: string,  // ISO date format
+  rating: number,       // Integer 0-5
+  notes: string        // Personal travel notes
+}
+```
+
+### Methods
+
+#### Place Instance Methods
+
+- `addLandmark(landmark)` - Add a landmark to the place
+  - Returns: `boolean` (true on success)
+  - Validates: non-empty string, trims whitespace
+
+- `removeLandmark(landmark)` - Remove a landmark from the place
+  - Returns: `boolean` (true if found and removed)
+
+- `updateRating(newRating)` - Update the rating
+  - Returns: `boolean` (true on success)
+  - Validates: integer between 0-5
+
+- `getSummary()` - Get a formatted summary string
+  - Returns: `string` (e.g., "Paris, France - Visited in Summer 2023")
+
+- `isVisitedInSeason(season)` - Check if visited in a specific season
+  - Returns: `boolean`
+  - Case-insensitive matching
+
+- `getDetails()` - Get complete place details as object
+  - Returns: `object` with all properties
+
+- `updateNotes(newNotes)` - Update travel notes
+  - Returns: `boolean` (true on success)
+  - Validates: string type, trims whitespace
+
+### PlaceTracker Class
+
+The `PlaceTracker` class manages multiple places:
+
+#### Methods
+
+- `addPlace(place)` - Add a new place
+  - Returns: `boolean` (true on success)
+  - Validates: instance of Place class
+
+- `removePlace(placeId)` - Remove a place by ID
+  - Returns: `boolean` (true if found and removed)
+
+- `getPlaceById(placeId)` - Retrieve a place by ID
+  - Returns: `Place` object or `null`
+
+- `getAllPlaces()` - Get all places
+  - Returns: `array` of Place objects
+
+- `getPlacesByCountry(country)` - Filter places by country
+  - Returns: `array` of Place objects
+  - Case-insensitive matching
+
+- `getPlacesBySeason(season)` - Filter places by season
+  - Returns: `array` of Place objects
+
+- `getTotalPlaces()` - Get count of all places
+  - Returns: `number`
+
+- `getPlacesByRating()` - Get places sorted by rating (highest first)
+  - Returns: `array` of Place objects
+
+## Test-Driven Development
+
+This project was built using TDD methodology. All business logic was tested before implementation.
+
+### Running Tests
+
+```bash
+node test.js
+```
+
+1. **Constructor Tests** (2 tests)
+   - Creating places with all properties
+   - Default values for optional parameters
+
+2. **Landmark Management** (4 tests)
+   - Adding valid landmarks
+   - Whitespace trimming
+   - Rejecting empty strings
+   - Rejecting non-string values
+   - Removing existing landmarks
+   - Handling non-existent landmarks
+
+3. **Rating Management** (4 tests)
+   - Accepting valid ratings (0-5)
+   - Rejecting ratings above 5
+   - Rejecting negative ratings
+   - Rejecting non-integer ratings
+
+4. **Utility Methods** (4 tests)
+   - Summary generation
+   - Season matching (case-insensitive)
+   - Getting complete details
+   - Notes management with whitespace trimming
+
+5. **PlaceTracker Tests** (12 tests)
+   - Adding places
+   - Validating Place instances
+   - Removing places by ID
+   - Retrieving places by ID
+   - Handling non-existent IDs
+   - Filtering by country
+   - Filtering by season
+   - Sorting by rating
+   - Getting all places
+   - Counting total places
+
+### TDD Workflow
+
+Each feature followed this workflow:
+
+1. ✍️ **Write Test** - Define expected behavior
+2. ❌ **Run Test** - Verify it fails (red)
+3. ✅ **Write Code** - Implement minimal code to pass
+4. ✅ **Run Test** - Verify it passes (green)
+5. 🔄 **Refactor** - Improve code quality
+6. 💾 **Commit** - Save progress with descriptive message
+
+## Design Philosophy
+
+The interface features a **vintage travel journal aesthetic** inspired by:
+
+- Classic travel posters and stamps
+- Aged parchment and coffee-stained notebooks
+- Elegant serif typography (Playfair Display, Cormorant Garamond)
+- Warm, earthy color palette (burgundy, coffee, gold, forest green)
+- Ornamental details and decorative elements
+- Smooth, nostalgic animations
+
+This design choice creates an emotional connection to the romance of travel and adventure, making the act of recording memories feel special and meaningful.
+
+## File Structure
+
+```
+travel-tracker/
+├── index.html       # Main HTML structure
+├── styles.css       # Vintage-styled CSS with animations
+├── app.js          # Frontend application logic
+├── place.js        # Business logic (Place & PlaceTracker classes)
+├── test.js         # Test suite
+└── README.md       # This file
+```
+
+## Browser Compatibility
+
+- Chrome/Edge (latest)
+- Firefox (latest)
+- Safari (latest)
+- Mobile browsers (iOS Safari, Chrome Mobile)
+
+## Future Enhancements
+
+Potential features for future development:
+
+- [ ] Photo upload for destinations
+- [ ] Map integration to visualize travels
+- [ ] Search functionality
+- [ ] Travel statistics graphs
+- [ ] Share destinations via URL
+- [ ] Import data from other sources
+- [ ] Multiple user support
+
+## License
+
+MIT License - Feel free to use and modify for your own projects!
+
+## Contributing
+
+Contributions are welcome! Please ensure:
+
+1. All tests pass (`node test.js`)
+2. New features include tests
+
+**Happy Travels!** ✈️🌍🗺️
+
+*Built with ❤️ *

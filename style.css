@@ -22,7 +22,7 @@
 
 body {
     font-family: 'Cormorant Garamond', serif;
-    background-image: url(https://i.pinimg.com/1200x/1a/11/c5/1a11c59b362427e74bbfa7c6d5596788.jpg);
+    background-image: url(https://i.pinimg.com/736x/2a/c2/52/2ac2526cdbcd6e7230b8c83d7ecad373.jpg);
     color: var(--color-dark-coffee);
     line-height: 1.8;
     min-height: 100vh;
@@ -30,7 +30,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Subtle texture overlay */
+
 body::before {
     content: '';
     position: fixed;
@@ -51,7 +51,7 @@ body::before {
     z-index: 2;
 }
 
-/* Header */
+
 .header {
     text-align: center;
     margin-bottom: 60px;
