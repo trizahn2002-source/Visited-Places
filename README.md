@@ -1,20 +1,19 @@
 # Visited-Places
 A beautiful and simple travel journal web application.
-# Wanderlust Journal - Travel Tracker 🌍
+# Visited-Places (Travel Tracker)
 
-A beautiful vintage-styled web application to track and document your travel adventures. Built with Test-Driven Development (TDD) principles.
+A beautiful web application to track and document your travel adventures.
 
-## Features
+## Features.
 
-- **Add Destinations**: Record detailed information about places you've visited
-- **Rich Details**: Track location, country, landmarks, season, dates, ratings, and personal notes
-- **Interactive UI**: Click on any destination to view full details in an elegant modal
-- **Smart Filtering**: Filter by country or season, sort by date, rating, or alphabetically
-- **Statistics Dashboard**: View total destinations, countries visited, and average ratings
-- **Local Storage**: All data persists in your browser
-- **Responsive Design**: Works beautifully on desktop and mobile devices
+- **Add Destinations**: Record detailed information about places you've visited.
+- **Rich Details**: Track location, country, landmarks, season, dates, ratings, and personal notes.
+- **Interactive UI**: Click on any destination to view full details in an elegant modal.
+- **Statistics Dashboard**: View total destinations, countries visited, and average ratings,
+- **Local Storage**: All data persists in your browser.
+- **Responsive Design**: Works beautifully on desktop and mobile devices.
 
-## Technology Stack
+## Technology Used.
 
 - **HTML5**: Semantic markup
 - **CSS3**: Custom vintage travel aesthetic with animations
@@ -27,8 +26,6 @@ A beautiful vintage-styled web application to track and document your travel adv
 3. Start adding your travel destinations!
 
 No build process or dependencies required - just open and use!
-
-## Business Logic - Place Object
 
 ### Place Class
 
@@ -114,9 +111,8 @@ This project was built using TDD methodology. All business logic was tested befo
 
 ### Running Tests
 
-```bash
+bash
 node test.js
-```
 
 1. **Constructor Tests** (2 tests)
    - Creating places with all properties
@@ -154,16 +150,6 @@ node test.js
    - Getting all places
    - Counting total places
 
-### TDD Workflow
-
-Each feature followed this workflow:
-
-1. ✍️ **Write Test** - Define expected behavior
-2. ❌ **Run Test** - Verify it fails (red)
-3. ✅ **Write Code** - Implement minimal code to pass
-4. ✅ **Run Test** - Verify it passes (green)
-5. 🔄 **Refactor** - Improve code quality
-6. 💾 **Commit** - Save progress with descriptive message
 
 ## Design Philosophy
 
