@@ -157,10 +157,8 @@ The interface features a **vintage travel journal aesthetic** inspired by:
 
 - Classic travel posters and stamps
 - Aged parchment and coffee-stained notebooks
-- Elegant serif typography (Playfair Display, Cormorant Garamond)
 - Warm, earthy color palette (burgundy, coffee, gold, forest green)
-- Ornamental details and decorative elements
-- Smooth, nostalgic animations
+- Pinterest pic on the background.
 
 This design choice creates an emotional connection to the romance of travel and adventure, making the act of recording memories feel special and meaningful.
 
@@ -189,11 +187,8 @@ Potential features for future development:
 
 - [ ] Photo upload for destinations
 - [ ] Map integration to visualize travels
-- [ ] Search functionality
-- [ ] Travel statistics graphs
 - [ ] Share destinations via URL
 - [ ] Import data from other sources
-- [ ] Multiple user support
 
 ## License
 
@@ -208,4 +203,4 @@ Contributions are welcome! Please ensure:
 
 **Happy Travels!** ✈️🌍🗺️
 
-*Built with ❤️ *
+*Built with ❤️ TRIZAH NJERI W*
