@@ -12,17 +12,17 @@ A beautiful and simple travel journal web application to track and document your
 
 ## Technology Used.
 
-- **HTML5**: Semantic markup
-- **CSS**: Custom vintage travel aesthetic with animations
-- **Vanilla JavaScript**: No frameworks 
+- **HTML5**: Semantic markup.
+- **CSS**: Custom vintage travel aesthetic with animations.
+- **Vanilla JavaScript**: No frameworks .
 
 ## Installation & Usage
 
-1. Clone or download this repository
-2. Open `index.html` in a modern web browser
+1. Clone or download this repository.
+2. Open `index.html` in a modern web browser.
 3. Start adding your travel destinations!
 
-No build process or dependencies required - just open and use!
+No login details required - just open and use!
 
 ### Place Class
 
