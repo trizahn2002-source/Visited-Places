@@ -124,7 +124,7 @@ node test.js
 
 3. **Utility Methods** (4 tests)
    - Summary generation
-   - Season matching (case-insensitive)
+   - Season matching.
    - Getting complete details
    - Notes management with whitespace trimming
 
