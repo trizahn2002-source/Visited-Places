@@ -13,7 +13,7 @@ A beautiful and simple travel journal web application to track and document your
 ## Technology Used.
 
 - **HTML5**: Semantic markup
-- **CSS3**: Custom vintage travel aesthetic with animations
+- **CSS**: Custom vintage travel aesthetic with animations
 - **Vanilla JavaScript**: No frameworks 
 
 ## Installation & Usage
