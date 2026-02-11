@@ -111,11 +111,7 @@ The `PlaceTracker` class manages multiple places:
 bash
 node test.js
 
-1. **Constructor Tests** (2 tests)
-   - Creating places with all properties
-   - Default values for optional parameters
-
-2. **Landmark Management** (4 tests)
+1. **Landmark Management** (4 tests)
    - Adding valid landmarks
    - Whitespace trimming
    - Rejecting empty strings
@@ -123,19 +119,19 @@ node test.js
    - Removing existing landmarks
    - Handling non-existent landmarks
 
-3. **Rating Management** (4 tests)
+2. **Rating Management** (4 tests)
    - Accepting valid ratings (0-5)
    - Rejecting ratings above 5
    - Rejecting negative ratings
    - Rejecting non-integer ratings
 
-4. **Utility Methods** (4 tests)
+3. **Utility Methods** (4 tests)
    - Summary generation
    - Season matching (case-insensitive)
    - Getting complete details
    - Notes management with whitespace trimming
 
-5. **PlaceTracker Tests** (12 tests)
+4. **PlaceTracker Tests** (12 tests)
    - Adding places
    - Validating Place instances
    - Removing places by ID
@@ -152,10 +148,10 @@ node test.js
 
 The interface features a **vintage travel journal aesthetic** inspired by:
 
-- Classic travel posters and stamps
-- Aged parchment and coffee-stained notebooks
-- Warm, earthy color palette (burgundy, coffee, gold, forest green)
-- Pinterest pic on the background.
+- Classic travel posters and stamps.
+- Aged coffee-stained notebooks.
+- Warm, earthy color palette (burgundy, coffee, gold,).
+- Pinterest world pic on the background.
 
 This design choice creates an emotional connection to the romance of travel and adventure, making the act of recording memories feel special and meaningful.
 
