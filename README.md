@@ -105,9 +105,6 @@ The `PlaceTracker` class manages multiple places:
 - `getPlacesByRating()` - Get places sorted by rating (highest first)
   - Returns: `array` of Place objects
 
-## Test-Driven Development
-
-This project was built using TDD methodology. All business logic was tested before implementation.
 
 ### Running Tests
 
