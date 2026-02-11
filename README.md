@@ -1,8 +1,5 @@
-# Visited-Places
-A beautiful and simple travel journal web application.
 # Visited-Places (Travel Tracker)
-
-A beautiful web application to track and document your travel adventures.
+A beautiful and simple travel journal web application to track and document your travel adventures.
 
 ## Features.
 
@@ -191,8 +188,8 @@ MIT License - Feel free to use and modify for your own projects!
 
 Contributions are welcome! Please ensure:
 
-1. All tests pass (`node test.js`)
-2. New features include tests
+1. All tests pass node .
+2. New features include tests.
 
 **Happy Travels!** ✈️🌍🗺️
 
