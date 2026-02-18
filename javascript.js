@@ -1,8 +1,5 @@
 
-// ============================================================================
 // BUSINESS LOGIC - Place and PlaceTracker Classes
-// ============================================================================
-
 class Place {
   constructor(location, landmarks, timeOfYear, notes, country, dateVisited, rating) {
     this.location = location;
@@ -139,9 +136,9 @@ class PlaceTracker {
   }
 }
 
-// ============================================================================
+
 // APPLICATION LOGIC - UI and Interactions
-// ============================================================================
+
 
 // Initialize PlaceTracker
 const tracker = new PlaceTracker();

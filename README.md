@@ -109,12 +109,12 @@ bash
 node test.js
 
 1. **Landmark Management** (4 tests)
-   - Adding valid landmarks
-   - Whitespace trimming
-   - Rejecting empty strings
+   - Adding valid landmarks.
+   - Whitespace trimming.
+   - Rejecting empty strings.
    - Rejecting non-string values
-   - Removing existing landmarks
-   - Handling non-existent landmarks
+   - Removing existing landmarks.
+   - Handling non-existent landmarks.
 
 2. **Rating Management** (4 tests)
    - Accepting valid ratings (0-5)
