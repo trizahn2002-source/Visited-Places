@@ -152,7 +152,7 @@ The interface features a **vintage travel journal aesthetic** inspired by:
 
 This design choice creates an emotional connection to the romance of travel and adventure, making the act of recording memories feel special and meaningful.
 
-## File Structure
+## File Structure.
 
 ```
 travel-tracker/
